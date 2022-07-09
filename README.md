@@ -56,32 +56,30 @@ where `s` is the sample [standard deviation][standard-deviation].
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-base-dsemch
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-dsemch = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dsemch@umd/bundle.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dsemch@umd/bundle.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.dsemch;
-})();
-</script>
+var dsemch = require( '@stdlib/stats-base-dsemch' );
 ```
 
 #### dsemch( N, correction, x, stride )
@@ -188,16 +186,11 @@ var v = dsemch.ndarray( N, 1, x, 2, 1 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dsemch@umd/bundle.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var round = require( '@stdlib/math-base-special-round' );
+var Float64Array = require( '@stdlib/array-float64' );
+var dsemch = require( '@stdlib/stats-base-dsemch' );
 
 var x;
 var i;
@@ -210,11 +203,6 @@ console.log( x );
 
 var v = dsemch( x.length, 1, x, 1 );
 console.log( v );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -290,8 +278,8 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/stats-base-dsemch.svg
 [npm-url]: https://npmjs.org/package/@stdlib/stats-base-dsemch
 
-[test-image]: https://github.com/stdlib-js/stats-base-dsemch/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/stats-base-dsemch/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/stats-base-dsemch/actions/workflows/test.yml/badge.svg?branch=v0.0.9
+[test-url]: https://github.com/stdlib-js/stats-base-dsemch/actions/workflows/test.yml?query=branch:v0.0.9
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-base-dsemch/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/stats-base-dsemch?branch=main
@@ -316,6 +304,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/stats-base-dsemch/tree/deno
 [umd-url]: https://github.com/stdlib-js/stats-base-dsemch/tree/umd
 [esm-url]: https://github.com/stdlib-js/stats-base-dsemch/tree/esm
+[branches-url]: https://github.com/stdlib-js/stats-base-dsemch/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/stats-base-dsemch/main/LICENSE
 
@@ -323,7 +312,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [standard-deviation]: https://en.wikipedia.org/wiki/Standard_deviation
 
-[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64/tree/umd
+[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
@@ -337,9 +326,9 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/base/dsem]: https://github.com/stdlib-js/stats-base-dsem/tree/umd
+[@stdlib/stats/base/dsem]: https://github.com/stdlib-js/stats-base-dsem
 
-[@stdlib/stats/base/dstdevch]: https://github.com/stdlib-js/stats-base-dstdevch/tree/umd
+[@stdlib/stats/base/dstdevch]: https://github.com/stdlib-js/stats-base-dstdevch
 
 <!-- </related-links> -->
 
