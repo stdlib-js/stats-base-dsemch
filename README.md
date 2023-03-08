@@ -30,10 +30,14 @@ The [standard error of the mean][standard-error] of a finite size sample of size
 
 <!-- <equation class="equation" label="eq:standard_error_of_the_mean" align="center" raw="\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}" alt="Equation for the standard error of the mean."> -->
 
-<div class="equation" align="center" data-raw-text="\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}" data-equation="eq:standard_error_of_the_mean">
+```math
+\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}" data-equation="eq:standard_error_of_the_mean">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@3ebbbfc49c54971356c0cf8f6282e6720cb07755/lib/node_modules/@stdlib/stats/base/dsemch/docs/img/equation_standard_error_of_the_mean.svg" alt="Equation for the standard error of the mean.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -43,10 +47,14 @@ Often in the analysis of data, the true population [standard deviation][standard
 
 <!-- <equation class="equation" label="eq:standard_error_of_the_mean_estimate" align="center" raw="\sigma_{\bar{x}} \approx \frac{s}{\sqrt{n}}" alt="Equation for estimating the standard error of the mean."> -->
 
-<div class="equation" align="center" data-raw-text="\sigma_{\bar{x}} \approx \frac{s}{\sqrt{n}}" data-equation="eq:standard_error_of_the_mean_estimate">
+```math
+\sigma_{\bar{x}} \approx \frac{s}{\sqrt{n}}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\sigma_{\bar{x}} \approx \frac{s}{\sqrt{n}}" data-equation="eq:standard_error_of_the_mean_estimate">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@3ebbbfc49c54971356c0cf8f6282e6720cb07755/lib/node_modules/@stdlib/stats/base/dsemch/docs/img/equation_standard_error_of_the_mean_estimate.svg" alt="Equation for estimating the standard error of the mean.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -292,7 +300,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
