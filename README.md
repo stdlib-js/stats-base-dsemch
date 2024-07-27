@@ -82,7 +82,7 @@ where `s` is the sample [standard deviation][standard-deviation].
 ## Usage
 
 ```javascript
-import dsemch from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dsemch@deno/mod.js';
+import dsemch from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dsemch@v0.2.2-deno/mod.js';
 ```
 
 #### dsemch( N, correction, x, stride )
@@ -193,7 +193,7 @@ var v = dsemch.ndarray( N, 1, x, 2, 1 );
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@deno/mod.js';
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import dsemch from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dsemch@deno/mod.js';
+import dsemch from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dsemch@v0.2.2-deno/mod.js';
 
 var x;
 var i;
